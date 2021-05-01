@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.pages{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: darkgreen;  
+  transition: width 1s, transform 1s;
+  
+}
+
+.page{
+  position: absolute;
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(84, 7, 114);
+  transition: width 1s, transform 1s;
+}
+.homePage{
+  width: 100%;
+  z-index: 1;
+}
+.detailPage{
+  width: 100%;
+  height: 100vh;
+  /* transform: translate(100%, 0); */
+  background-color: red;  
+  transition: width 1s;
+}
+.homeHeader{
+  background-color: darkcyan;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.grids{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin-top: 10vw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* grid-template-rows: 300px 300px 300px 300px; */
+  grid-gap: 1rem;
+  background-color: darkkhaki;
+  transition: width 1s, transform 1s;
+}
+
+
+
+.grid{
+  background-color: darkgray;
+  height: 20vw;
+}
+
+.grid:hover{
+  cursor: pointer;
+  background-color: darkorange;
+}
